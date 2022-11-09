@@ -1,0 +1,84 @@
+.animation {
+  padding: 1rem;
+  animation-name: animation;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  /* animation-iteration-count: infinite; */
+  background: #e1c27a;
+  height: 60px;
+  text-align: center;
+  animation-timing-function: ease-out;
+}
+
+@keyframes animation {
+  0% {
+    width: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+body {
+  background-color: black;
+  text-align: center;
+}
+.copyBox {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 200px;
+  background-color: #fcf0d8;
+  color: #333333;
+  font-family: sans-serif;
+  padding: 20px;
+}
+.copyBox .line {
+  position: absolute;
+  background-color: rgb(254, 203, 74);
+  box-shadow: 0px 0px 12px rgb(254, 203, 74);
+  width: 4px;
+  height: 3rem;
+  top: 10px;
+  left: 22px;
+  overflow: hidden;
+}
+.copyBox.two .line {
+  border-radius: 0;
+  width: 2px;
+}
+.copyBox .line .scanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: 20px;
+  border-radius: 50%;
+  animation: scanner-loop 3s ease-in-out infinite;
+}
+
+.copyBox.two .line .scanner {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  height: 50%;
+}
+@keyframes scanner-loop {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+.copyBox .inner {
+  padding: 30px;
+}
