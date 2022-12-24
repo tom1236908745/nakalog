@@ -1,15 +1,27 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import homeStyle from '../styles/home.module.css';
+
+let count = 0;
+
+export const Child: React.FC = () => {
+  // 関数外の変数を更新
+  count++;
+  return <p>{count}</p>;
+};
 
 export default function Page() {
   const [select, setSelect] = useState<string>('');
 
-  const onChange: any = (selected: string) => {
-    console.log(selected);
-    setSelect(selected);
+  const handleChange = (e: any) => {
+    setSelect(e.target.value);
   };
+
+  useEffect(() => {
+    console.log(select);
+  }, [select]);
+
   return (
     <div>
       <br />
@@ -26,20 +38,16 @@ export default function Page() {
         </div>
       </div>
 
-      <select>
-        <option value="" onChange={onChange}>
-          --Veuillez en choisir un.--
-        </option>
-        <option value="辛い" onChange={onChange}>
-          Épicé
-        </option>
-        <option value="甘い" onChange={onChange}>
-          sucré
-        </option>
-        <option value="苦い" onChange={onChange}>
-          amer
-        </option>
+      <select onChange={handleChange}>
+        <option value="">--Veuillez en choisir un.--</option>
+        <option value="辛い">Épicé</option>
+        <option value="甘い">sucré</option>
+        <option value="苦い">amer</option>
       </select>
+
+      <div style={{ color: 'red' }}>{select}</div>
+      <Child />
+      <Child />
     </div>
   );
 }

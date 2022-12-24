@@ -1,6 +1,4 @@
-import '@/styles/dist.css';
-import '@/styles/globals.css';
-import React from 'react';
+/* eslint-disable @next/next/no-head-element */
 
 export default function RootLayout({
   children,
@@ -9,10 +7,8 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head>
-        <title>Next.js Turbopack App Directory Playground</title>
-      </head>
-      <body className="overflow-y-scroll bg-zinc-900">{children}</body>
+      <head></head>
+      <body>{children}</body>
     </html>
   );
 }
