@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import homeStyle from '../styles/home.module.css';
+import HumberguerMenu from './HumbergerMenu';
 
 export default function Page() {
   const [select, setSelect] = useState<string>('');
@@ -17,7 +18,7 @@ export default function Page() {
   return (
     <div>
       <br />
-
+      <HumberguerMenu />
       <div className={homeStyle.animation}>Cocktail4U</div>
       <br />
       <div className={homeStyle.copyBox}>
