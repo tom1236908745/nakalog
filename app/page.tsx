@@ -3,14 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import homeStyle from '../styles/home.module.css';
 
-let count = 0;
-
-export const Child: React.FC = () => {
-  // 関数外の変数を更新
-  count++;
-  return <p>{count}</p>;
-};
-
 export default function Page() {
   const [select, setSelect] = useState<string>('');
 
@@ -25,6 +17,7 @@ export default function Page() {
   return (
     <div>
       <br />
+
       <div className={homeStyle.animation}>Cocktail4U</div>
       <br />
       <div className={homeStyle.copyBox}>
@@ -46,8 +39,6 @@ export default function Page() {
       </select>
 
       <div style={{ color: 'red' }}>{select}</div>
-      <Child />
-      <Child />
     </div>
   );
 }

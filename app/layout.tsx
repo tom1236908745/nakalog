@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-head-element */
+import HumberguerMenu from './HumbergerMenu';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,11 @@ export default function RootLayout({
   return (
     <html>
       <head></head>
-      <body>{children}</body>
+
+      <body>
+        <HumberguerMenu />
+        {children}
+      </body>
     </html>
   );
 }
