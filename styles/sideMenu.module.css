@@ -28,7 +28,7 @@
   right: 0;
 }
 .link1 {
-  transition: right 0.4s;
+  transition: right 2s;
   right: 0;
   list-style: none;
 }
