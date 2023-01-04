@@ -1,0 +1,49 @@
+.menu {
+  background-color: #f8aa19f8;
+  width: 24vw;
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  position: fixed;
+  padding: 20px;
+  right: -100%;
+  top: 0;
+  opacity: 0;
+}
+.checkedMenu {
+  right: 0;
+  opacity: 1;
+  transition: 2.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.links {
+  margin-top: 7rem;
+  padding-left: 0;
+}
+.menu > li {
+  background-color: red;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  right: -100%;
+  position: relative;
+  right: 0;
+}
+.link1 {
+  transition: right 0.4s;
+  right: 0;
+  list-style: none;
+}
+.link2 {
+  transition: right 0.6s;
+  right: 0;
+  list-style: none;
+}
+.link3 {
+  transition: right 0.8s;
+  right: 0;
+  list-style: none;
+}
+.leaveMenu {
+  right: -1%;
+  opacity: 0;
+  transition: 2s cubic-bezier(0.23, 1, 0.32, 1);
+}

@@ -1,17 +1,19 @@
 'use client';
-import { useState } from 'react';
+// import { useState } from 'react';
+import { useRecoilState } from 'recoil';
+import { centerState } from '../atoms/CenterAtom';
 import humberger from '../styles/humbergerMenu.module.css';
 
 export default function HumbergerMunu() {
-  const [active, setActive] = useState(false);
+  const [center, setCenter] = useRecoilState(centerState);
   const classToggle = () => {
-    setActive(!active);
+    setCenter(!center);
   };
   return (
-    <div className={humberger.color}>
+    <div className={humberger.menu}>
       <button
-        className={`${humberger.menuTrigger} ${active ? humberger.active : ''}`}
-        id={humberger.menu05}
+        className={`${humberger.menuTrigger} ${center ? humberger.active : ''}`}
+        id={humberger.menu}
         onClick={classToggle}
       >
         <span></span>

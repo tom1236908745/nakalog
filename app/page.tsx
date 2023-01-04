@@ -1,8 +1,9 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { RecoilRoot } from 'recoil';
 import homeStyle from '../styles/home.module.css';
-import HumberguerMenu from './HumbergerMenu';
+import SideMenu from './SideMenu';
 
 export default function Page() {
   const [select, setSelect] = useState<string>('');
@@ -16,30 +17,36 @@ export default function Page() {
   }, [select]);
 
   return (
-    <div>
-      <br />
-      <HumberguerMenu />
-      <div className={homeStyle.animation}>Cocktail4U</div>
-      <br />
-      <div className={homeStyle.copyBox}>
-        <div className={homeStyle.inner}>
-          <div className={`${homeStyle.line} ${homeStyle.right}`}>
-            <div className={homeStyle.scanner}></div>
+    <RecoilRoot>
+      <div>
+        <div>
+          <br />
+          {/* <div className={homeStyle.animation}>Cocktail4U</div> */}
+          <br />
+          <div className={homeStyle.copyBox}>
+            <div className={homeStyle.inner}>
+              <div className={`${homeStyle.line} ${homeStyle.right}`}>
+                <div className={homeStyle.scanner}></div>
+              </div>
+              Lorem ipsum dolor sit amec. Lorem ipsum dolor sit amec Lorem ipsum
+              dolor sit amec Lorem ipsum dolor sit amec Lorem ipsum dolor sit
+              amec Lorem ipsum dolor sit amec Lorem ipsum dolor sit amec
+            </div>
           </div>
-          Lorem ipsum dolor sit amec. Lorem ipsum dolor sit amec Lorem ipsum
-          dolor sit amec Lorem ipsum dolor sit amec Lorem ipsum dolor sit amec
-          Lorem ipsum dolor sit amec Lorem ipsum dolor sit amec
+
+          <select onChange={handleChange}>
+            <option value="">--Veuillez en choisir un.--</option>
+            <option value="辛い">Épicé</option>
+            <option value="甘い">sucré</option>
+            <option value="苦い">amer</option>
+          </select>
+
+          <div style={{ color: 'red' }}>{select}</div>
+        </div>
+        <div>
+          <SideMenu />
         </div>
       </div>
-
-      <select onChange={handleChange}>
-        <option value="">--Veuillez en choisir un.--</option>
-        <option value="辛い">Épicé</option>
-        <option value="甘い">sucré</option>
-        <option value="苦い">amer</option>
-      </select>
-
-      <div style={{ color: 'red' }}>{select}</div>
-    </div>
+    </RecoilRoot>
   );
 }

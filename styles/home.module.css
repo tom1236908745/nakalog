@@ -13,7 +13,7 @@
 @keyframes animation {
   0% {
     width: 50%;
-    opacity: 0;
+    opacity: 0.2;
   }
 
   100% {
@@ -29,7 +29,6 @@ body {
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  width: 200px;
   background-color: #fcf0d8;
   color: #333333;
   font-family: sans-serif;
@@ -81,4 +80,7 @@ body {
 }
 .copyBox .inner {
   padding: 30px;
+}
+.enclose {
+  display: flex;
 }
