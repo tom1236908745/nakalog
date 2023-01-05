@@ -1,22 +1,40 @@
 'use client';
 import { useState } from 'react';
 import { useRecoilValue } from 'recoil';
-import { centerState } from '../atoms/CenterAtom';
+import { checkedState } from '../atoms/CheckedAtom.js';
 import side from '../styles/sideMenu.module.css';
 import HumberguerMenu from './HumbergerMenu';
 
 export default function SideMenue() {
-  const center = useRecoilValue(centerState);
+  const checked = useRecoilValue(checkedState);
   return (
     <div>
       <HumberguerMenu />
-      <div className={`${side.menu} ${center ? side.checkedMenu : side.color}`}>
-        <ul className={`${center ? side.links : ''}`}>
-          <li className={`${center ? side.link1 : ''}`}>リンク1</li>
-          <li className={`${center ? side.link2 : ''}`}>リンク2</li>
-          <li className={`${center ? side.link3 : ''}`}>リンク3</li>
+      <nav className={`${side.menu} ${checked ? side.checkedMenu : ''}`}>
+        <ul className={side.links}>
+          <li
+            className={`${side.link1} ${
+              checked ? side.checkedList : side.link
+            }`}
+          >
+            リンク1
+          </li>
+          <li
+            className={`${side.link2} ${
+              checked ? side.checkedList : side.link
+            }`}
+          >
+            リンク2
+          </li>
+          <li
+            className={`${side.link3} ${
+              checked ? side.checkedList : side.link
+            }`}
+          >
+            リンク3
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
   );
 }

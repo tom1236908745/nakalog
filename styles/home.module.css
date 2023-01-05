@@ -21,10 +21,6 @@
     opacity: 1;
   }
 }
-body {
-  background-color: black;
-  text-align: center;
-}
 .copyBox {
   position: relative;
   display: inline-block;

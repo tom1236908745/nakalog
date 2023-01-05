@@ -1,18 +1,20 @@
 'use client';
 // import { useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { centerState } from '../atoms/CenterAtom';
+import { checkedState } from '../atoms/CheckedAtom';
 import humberger from '../styles/humbergerMenu.module.css';
 
 export default function HumbergerMunu() {
-  const [center, setCenter] = useRecoilState(centerState);
+  const [checked, setCenter] = useRecoilState(checkedState);
   const classToggle = () => {
-    setCenter(!center);
+    setCenter(!checked);
   };
   return (
     <div className={humberger.menu}>
       <button
-        className={`${humberger.menuTrigger} ${center ? humberger.active : ''}`}
+        className={`${humberger.menuTrigger} ${
+          checked ? humberger.active : ''
+        }`}
         id={humberger.menu}
         onClick={classToggle}
       >

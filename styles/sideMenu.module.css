@@ -9,41 +9,52 @@
   right: -100%;
   top: 0;
   opacity: 0;
+  transition: 2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .checkedMenu {
   right: 0;
   opacity: 1;
-  transition: 2.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.checkedList {
+  right: 0;
 }
 .links {
   margin-top: 7rem;
   padding-left: 0;
 }
-.menu > li {
+.link {
   background-color: red;
   border-bottom: 1px solid #fff;
   padding: 10px 0;
   right: -100%;
   position: relative;
-  right: 0;
 }
 .link1 {
-  transition: right 2s;
-  right: 0;
+  transition: right 3.7s;
+  background-color: red;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  position: relative;
   list-style: none;
 }
 .link2 {
-  transition: right 0.6s;
-  right: 0;
+  transition: right 3s;
+  background-color: red;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  position: relative;
   list-style: none;
 }
 .link3 {
-  transition: right 0.8s;
-  right: 0;
+  transition: right 2.3s;
+  background-color: red;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  position: relative;
   list-style: none;
 }
 .leaveMenu {
-  right: -1%;
+  right: 0;
   opacity: 0;
-  transition: 2s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 3s cubic-bezier(0.23, 1, 0.32, 1);
 }
