@@ -80,3 +80,9 @@
 .enclose {
   display: flex;
 }
+.minHeight {
+  height: 10vh;
+}
+.maxHeight {
+  height: 100vh;
+}

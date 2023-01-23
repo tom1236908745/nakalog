@@ -1,8 +1,8 @@
 'use client';
 // import { useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { checkedState } from '../atoms/CheckedAtom';
-import humberger from '../styles/humbergerMenu.module.css';
+import { checkedState } from '../../atoms/CheckedAtom';
+import humberger from '../../styles/humbergerMenu.module.css';
 
 export default function HumbergerMunu() {
   const [checked, setCenter] = useRecoilState(checkedState);
