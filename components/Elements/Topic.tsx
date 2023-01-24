@@ -11,7 +11,7 @@ export default function Topic() {
           <h1 className={topic.largeStr}>
             Nakayama
             <br />
-            Portfolio
+            SHOP
             <br />
             だよ！
           </h1>
