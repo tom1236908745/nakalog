@@ -5,7 +5,9 @@ import topic from '../../styles/elements/topic.module.css';
 export default function Topic() {
   return (
     <div className={topic.wrapper}>
-      <div className={topic.leftParts}>a</div>
+      <div className={topic.leftParts}>
+        <img id="momo" src="/images/momo.jpg" width="300" alt="momo" />
+      </div>
       <div className={topic.rightParts}>
         <div className={topic.rightWidth}>
           <h1 className={topic.largeStr}>
