@@ -16,9 +16,7 @@ export default function Page() {
           <SideMenu />
         </div>
         <Topic />
-        <div className={homeStyle.minHeight}>
-          かっこいいと美を追求するプログラマーの世界観へとご案内。その世界をより深く知るための好きな音楽・映画・本も、各分野のこだわりをセレクトしました。ようこそ、個性の詰まった異世界へ。
-        </div>
+
         <Popup />
         <div className={homeStyle.maxHeight}>
           かっこいいと美を追求するプログラマーの世界観へとご案内。その世界をより深く知るための好きな音楽・映画・本も、各分野のこだわりをセレクトしました。ようこそ、個性の詰まった異世界へ。

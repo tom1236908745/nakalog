@@ -17,6 +17,7 @@
 }
 .rightWidth {
   padding-left: 0 !important;
+  width: 40vw;
 }
 .largeStr {
   line-height: 1.25 !important;
@@ -24,13 +25,12 @@
   font-weight: inherit;
   margin: 0;
   font-feature-settings: 'palt' 1 !important;
-  font-kerning: normal !important;
   text-align: left;
+  font-weight: bold;
 }
 .smallStr {
   margin-top: 2rem !important;
   line-height: 1.75 !important;
   font-size: 1rem !important;
   text-align: justify;
-  text-justify: inter-ideograph;
 }
