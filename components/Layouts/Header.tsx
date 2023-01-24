@@ -1,25 +1,13 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
+import SideMenu from '../../components/Elements/SideMenu';
 import '../../styles/layout/header.css';
 
 const Header = () => {
   return (
     <header>
-      {/* <nav className="p-2">
-        <ul className="flex items-center space-x-2">
-          <li>
-            <Link style={{ color: 'purple' }} href="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link style={{ color: 'purple' }} href="/about">
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav> */}
       <div className="baseContent">
+        <SideMenu />
         <div className="wrapper">
           <div className="topMenue">
             <div className="logo">

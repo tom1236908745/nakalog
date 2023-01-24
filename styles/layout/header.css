@@ -1,23 +1,14 @@
 .baseContent {
-  background-color: rgb(224, 36, 36);
-  z-index: 1;
-}
-.wrapper {
-  width: calc(1330 / 1440 * 100%);
-}
-.topMenue {
-  column-gap: 1rem;
-  justify-content: space-between !important;
-  border-color: currentColor !important;
-  border-bottom: 1px solid rgba(16, 16, 16, 0.1) !important;
-}
-
-.baseContent {
   background-color: white;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  margin-left: 5rem;
 }
 .wrapper {
-  width: 84%;
+  width: 73%;
   margin: 0 auto;
 }
 .topMenue {
