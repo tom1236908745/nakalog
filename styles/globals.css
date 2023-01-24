@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Times New Roman';
-  color: rgb(114, 42, 165);
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
+  color: #101010;
   text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
