@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-head-element */
+use 'client';
 import '@/styles/globals.css';
-import Provider from './Provider';
+import { Provider } from 'jotai';
 
 export default function RootLayout({
   children,
