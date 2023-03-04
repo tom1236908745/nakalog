@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "dev:tailwind": "concurrently 'next dev --turbo' 'npm run tailwind --watch'",
     "build": "next build",
     "start": "next start",
@@ -20,6 +20,8 @@
     "clsx": "1.2.1",
     "concurrently": "7.5.0",
     "freezeframe": "5.0.2",
+    "html-react-parser": "3.0.10",
+    "microcms-js-sdk": "2.3.2",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
