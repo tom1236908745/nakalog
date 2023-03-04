@@ -7,11 +7,9 @@ import homeStyle from '../styles/home.module.css';
 
 import Popup from '../components/Elements/Popup';
 import Topic from '../components/Elements/Topic';
-import Header from '../components/Layouts/Header';
 export default function Page() {
   return (
     <div>
-      <Header />
       <Topic />
 
       <Popup />

@@ -41,10 +41,10 @@ const Header = () => {
                 </a>
               </li>
               <li className="topLink">
-                <a href="" className="linkTopMenues">
+                <Link href="/travel" className="linkTopMenues">
                   <span className="enStrTopMenu">VISIT</span>
                   <span className="jsStrTopMenue"> 訪れる </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
