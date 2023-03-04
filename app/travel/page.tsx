@@ -14,17 +14,20 @@ const Travel = async (): Promise<JSX.Element> => {
     return <h1>No contents</h1>;
   }
   return (
-    <div style={{ marginTop: '10rem', width: '13rem', height: '13rem' }}>
-      <h1>{time}</h1>
-      <ul>
-        {contents.map((post) => {
-          return (
-            <li key={post.id}>
-              <Link href={`/travel/${post.id}`}>{post.title}</Link>
-            </li>
-          );
-        })}
-      </ul>
+    <div>
+      <PlaneLogo />
+      <div style={{ marginTop: '10rem', width: '13rem', height: '13rem' }}>
+        <h1>{time}</h1>
+        <ul>
+          {contents.map((post) => {
+            return (
+              <li key={post.id}>
+                <Link href={`/travel/${post.id}`}>{post.title}</Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

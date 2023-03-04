@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import ReactFreezeframe from 'react-freezeframe';
 const PlaneLogo: React.FC = () => {
   return (

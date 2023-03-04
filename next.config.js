@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: false, // Recommended for the `pages` directory, default in `app`.
   swcMinify: true,
   experimental: {
+    esmExternals: true,
     // Required:
     appDir: true,
   },
