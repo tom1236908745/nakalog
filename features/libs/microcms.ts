@@ -20,6 +20,10 @@ export type BlogResponse = {
 };
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
+  console.log(
+    'MICROCMS_SERVICE_DOMAIN  ' + process.env.MICROCMS_SERVICE_DOMAIN,
+  );
+
   throw new Error('MICROCMS_SERVICE_DOMAIN is required');
 }
 

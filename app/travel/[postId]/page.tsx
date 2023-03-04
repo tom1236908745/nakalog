@@ -29,7 +29,7 @@ export default async function TravelDetailPage({
   }
 
   return (
-    <div>
+    <div style={{ marginTop: '10rem' }}>
       <h1>{post.title}</h1>
       <h2>{time}</h2>
       <div>{parse(post.body)}</div>

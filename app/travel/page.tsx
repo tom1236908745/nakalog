@@ -1,33 +1,14 @@
-import React, { use } from 'react';
-import Link from 'next/link';
-import { render } from 'react-dom';
+import React from 'react';
+import { GetBlogs } from 'components/Elements/Blogs/Travel/GetBlog';
 import PlaneLogo from '../../components/Elements/SVG/Travel/PlaneLogo';
-import { getList } from '../../features/libs/microcms';
-
+import { Suspense } from 'react';
 const Travel = async (): Promise<JSX.Element> => {
-  const { contents } = await getList();
-
-  // ページの生成された時間を取得
-  const time = new Date().toLocaleString();
-
-  if (!contents || contents.length === 0) {
-    return <h1>No contents</h1>;
-  }
   return (
-    <div>
+    <div style={{ marginTop: '10rem' }}>
       <PlaneLogo />
-      <div style={{ marginTop: '10rem', width: '13rem', height: '13rem' }}>
-        <h1>{time}</h1>
-        <ul>
-          {contents.map((post) => {
-            return (
-              <li key={post.id}>
-                <Link href={`/travel/${post.id}`}>{post.title}</Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <Suspense fallback={<p className="mt-4">Loading...</p>}>
+        <GetBlogs />
+      </Suspense>
     </div>
   );
 };

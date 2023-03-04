@@ -1,10 +1,14 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import ReactFreezeframe from 'react-freezeframe';
 const PlaneLogo: React.FC = () => {
   return (
-    <div style={{ marginTop: '10rem', width: '13rem', height: '13rem' }}>
-      <ReactFreezeframe src="./images/travel/plane.gif"></ReactFreezeframe>
+    <div>
+      {/* <ReactFreezeframe src="./images/travel/plane.gif"></ReactFreezeframe> */}
+      <img
+        style={{ width: '13rem', height: '13rem' }}
+        src="./images/travel/plane.gif"
+      />
     </div>
   );
 };
