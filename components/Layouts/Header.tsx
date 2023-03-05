@@ -14,41 +14,41 @@ const Header = () => {
         <div className="baseContent">
           <SideMenu />
           <div className="wrapper">
-            <div className="topMenue">
+            <div className="topMenu">
               <div className="logo">
                 <a href="/">logo</a>
               </div>
             </div>
-            <div className="downMenue">
+            <div className="downMenu">
               <ul className="topLinks">
                 <li className="topLink">
-                  <a href="" className="linkTopMenues">
+                  <a href="" className="linkTopMenus">
                     <span className="enStrTopMenu">EAT</span>
-                    <span className="jsStrTopMenue"> 食べる </span>
+                    <span className="jsStrTopMenu"> 食べる </span>
                   </a>
                 </li>
                 <li className="topLink">
-                  <a href="" className="linkTopMenues">
+                  <a href="" className="linkTopMenus">
                     <span className="enStrTopMenu">DRINK</span>
-                    <span className="jsStrTopMenue"> 飲む </span>
+                    <span className="jsStrTopMenu"> 飲む </span>
                   </a>
                 </li>
                 <li className="topLink">
-                  <a href="" className="linkTopMenues">
+                  <a href="" className="linkTopMenus">
                     <span className="enStrTopMenu">WATCH</span>
-                    <span className="jsStrTopMenue"> 見る </span>
+                    <span className="jsStrTopMenu"> 見る </span>
                   </a>
                 </li>
                 <li className="topLink">
-                  <a href="" className="linkTopMenues">
+                  <a href="" className="linkTopMenus">
                     <span className="enStrTopMenu">LISTEN</span>
-                    <span className="jsStrTopMenue"> 聴く </span>
+                    <span className="jsStrTopMenu"> 聴く </span>
                   </a>
                 </li>
                 <li className="topLink">
-                  <Link href="/travel" className="linkTopMenues">
+                  <Link href="/travel" className="linkTopMenus">
                     <span className="enStrTopMenu">VISIT</span>
-                    <span className="jsStrTopMenue"> 訪れる </span>
+                    <span className="jsStrTopMenu"> 訪れる </span>
                   </Link>
                 </li>
               </ul>

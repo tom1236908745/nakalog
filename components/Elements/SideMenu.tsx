@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import { checkedState } from '../../atoms/CheckedAtom';
 import side from '../../styles/sideMenu.module.css';
-import HumberguerMenu from './HumbergerMenu';
+import HumberguerMenu from './HamburgerMenu';
 
 export default function SideMenue() {
   const [checked, setChecked] = useRecoilState(checkedState);

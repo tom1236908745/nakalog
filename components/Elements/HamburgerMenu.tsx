@@ -2,20 +2,19 @@
 // import { useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { checkedState } from '../../atoms/CheckedAtom';
-import humberger from '../../styles/humbergerMenu.module.css';
-
-export default function HumbergerMunu() {
+import hamburger from '../../styles/hamburgerMenu.module.css';
+export default function HamburgerMunu() {
   const [checked, setCenter] = useRecoilState(checkedState);
   const classToggle = () => {
     setCenter(!checked);
   };
   return (
-    <div className={humberger.menu}>
+    <div className={hamburger.menu}>
       <button
-        className={`${humberger.menuTrigger} ${
-          checked ? humberger.active : ''
+        className={`${hamburger.menuTrigger} ${
+          checked ? hamburger.active : ''
         }`}
-        id={humberger.menu}
+        id={hamburger.menu}
         onClick={classToggle}
       >
         <span></span>

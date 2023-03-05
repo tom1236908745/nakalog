@@ -11,14 +11,14 @@
   width: 73%;
   margin: 0 auto;
 }
-.topMenue {
+.topMenu {
   column-gap: 1rem;
   justify-content: space-between !important;
   border-color: currentColor !important;
   border-bottom: 1px solid #000000 !important;
   margin-right: auto;
 }
-.downMenue {
+.downMenu {
   border-color: currentColor;
   border-bottom: 1.9px solid #000000 !important;
 }
@@ -36,7 +36,7 @@
 .topLink {
   align-items: center;
 }
-.linkTopMenues {
+.linkTopMenus {
   display: flex;
   column-gap: 0.2rem;
   align-items: center;
@@ -44,11 +44,11 @@
   transition: opacity 0.35s cubic-bezier(0.18, 0.06, 0.23, 1);
   will-change: opacity;
 }
-.enStrTopMenue {
+.enStrTopMenu {
   font-family: sans-serif;
   font-size: large;
   text-transform: uppercase !important;
 }
-.jsStrTopMenue {
+.jsStrTopMenu {
   font-size: xx-small;
 }
