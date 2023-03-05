@@ -14,6 +14,10 @@ const nextConfig = {
     // Required:
     appDir: true,
   },
+  // microcmsで画像を使う
+  images: {
+    domains: ['images.microcms-assets.io'],
+  },
 };
 
 module.exports = {

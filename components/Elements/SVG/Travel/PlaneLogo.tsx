@@ -5,10 +5,7 @@ const PlaneLogo: React.FC = () => {
   return (
     <div>
       {/* <ReactFreezeframe src="./images/travel/plane.gif"></ReactFreezeframe> */}
-      <img
-        style={{ width: '13rem', height: '13rem' }}
-        src="./images/travel/plane.gif"
-      />
+      <img style={{ height: '85vh' }} src="./images/travel/plane.gif" />
     </div>
   );
 };
