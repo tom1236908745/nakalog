@@ -29,7 +29,9 @@ export default async function TravelDetailPage({
   return (
     <div style={{ marginTop: '13rem' }}>
       <article className={articleStyle.articleWrapper}>
-        <h2 style={{ fontSize: '2.7rem' }}>{post.title}</h2>
+        <h2 style={{ fontSize: '2.7rem', marginBottom: '2rem' }}>
+          {post.title}
+        </h2>
         <p style={{ fontSize: '1rem', color: '#707070' }}>
           {adjustData(post.publishedAt)}
         </p>
