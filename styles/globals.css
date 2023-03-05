@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --font-size-m: 1.125rem;
+}
 * {
   font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
   color: #101010;

@@ -16,9 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/ui/*": ["ui/*"],
-      "@/lib/*": ["lib/*"],
+      "@/components/*": ["components/*"],
       "@/styles/*": ["styles/*"],
+      "@/*": ["src/*"],
       "lodash": ["types/lodash"]
     },
     "plugins": [

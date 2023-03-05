@@ -1,0 +1,10 @@
+.articleWrapper {
+  width: 620px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.bodyWrapper {
+  margin-top: 4rem;
+  font-size: var(--font-size-m);
+  line-height: 2.25rem;
+}

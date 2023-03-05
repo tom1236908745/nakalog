@@ -1,18 +1,7 @@
 import { notFound } from 'next/navigation';
 import parse from 'html-react-parser';
 import { getDetail, getList } from '../../../features/libs/microcms';
-
-export async function generateStaticParams() {
-  const { contents } = await getList();
-
-  const paths = contents.map((post) => {
-    return {
-      postId: post.id,
-    };
-  });
-
-  return [...paths];
-}
+import articleStyle from '@/styles/article/articleStyle.module.css';
 
 export default async function TravelDetailPage({
   params: { postId },
@@ -27,12 +16,25 @@ export default async function TravelDetailPage({
   if (!post) {
     notFound();
   }
-
+  const adjustData = (data: string | undefined) => {
+    if (!data) return;
+    data = data.substring(0, data.indexOf('T'));
+    let time: string[] = data.split('-');
+    if (time[1][0] === '0') time[1] = time[1][1];
+    if (time[2][0] === '0') time[2] = time[2][1];
+    console.log('time ' + time);
+    data = time[0] + '/' + time[1] + '/' + time[2];
+    return data;
+  };
   return (
-    <div style={{ marginTop: '10rem' }}>
-      <h1>{post.title}</h1>
-      <h2>{time}</h2>
-      <div>{parse(post.body)}</div>
+    <div style={{ marginTop: '13rem' }}>
+      <article className={articleStyle.articleWrapper}>
+        <h2 style={{ fontSize: '2.7rem' }}>{post.title}</h2>
+        <p style={{ fontSize: '1rem', color: '#707070' }}>
+          {adjustData(post.publishedAt)}
+        </p>
+        <div className={articleStyle.bodyWrapper}>{parse(post.body)}</div>
+      </article>
     </div>
   );
 }
