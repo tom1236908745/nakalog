@@ -17,6 +17,8 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "1.15.1",
+    "@react-google-maps/api": "2.18.1",
     "clsx": "1.2.1",
     "concurrently": "7.5.0",
     "freezeframe": "5.0.2",

@@ -2,16 +2,13 @@ import { notFound } from 'next/navigation';
 import parse from 'html-react-parser';
 import { getDetail, getList } from '../../../features/libs/microcms';
 import articleStyle from '@/styles/article/articleStyle.module.css';
-
+// import Map from '@/components/Elements/Utils/GoogleMap';
 export default async function TravelDetailPage({
   params: { postId },
 }: {
   params: { postId: string };
 }) {
   const post = await getDetail(postId);
-
-  // ページの生成された時間を取得
-  const time = new Date().toLocaleString();
 
   if (!post) {
     notFound();
@@ -28,6 +25,15 @@ export default async function TravelDetailPage({
   };
   return (
     <div style={{ marginTop: '13rem' }}>
+      <iframe
+        width="450"
+        height="250"
+        frameBorder="0"
+        style={{ border: 0 }}
+        referrerPolicy="no-referrer-when-downgrade"
+        src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_MAP_API}&&q=新宿御苑`}
+        allowFullScreen
+      ></iframe>
       <article className={articleStyle.articleWrapper}>
         <h2 style={{ fontSize: '2.7rem', marginBottom: '2rem' }}>
           {post.title}
