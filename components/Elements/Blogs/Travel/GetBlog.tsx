@@ -6,8 +6,8 @@ import type { MicroCMSImage } from 'microcms-js-sdk';
 import { adjustDate } from '@/features/utils/adjustDate';
 export const GetBlogs = (async () => {
   const { contents } = await getList();
-  const handleUrl = (url: MicroCMSImage | undefined) => {
-    if (url) return url.url;
+  const handleUrl = (eyecatch: MicroCMSImage | undefined) => {
+    if (eyecatch) return eyecatch.url;
     return '';
   };
   return (
