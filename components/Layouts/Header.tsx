@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { useRecoilValue } from 'recoil';
 import { loadingState } from 'atoms/LoadingAtom';
-import SideMenu from '../../components/Elements/SideMenu';
+import SideMenu from '../Elements/Utils/SideMenu';
 import '../../styles/layout/header.css';
 
 const Header = () => {

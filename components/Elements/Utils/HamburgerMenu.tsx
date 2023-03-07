@@ -1,8 +1,8 @@
 'use client';
 // import { useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { checkedState } from '../../atoms/CheckedAtom';
-import hamburger from '../../styles/hamburgerMenu.module.css';
+import { checkedState } from '../../../atoms/CheckedAtom';
+import hamburger from '@/styles/hamburgerMenu.module.css';
 export default function HamburgerMunu() {
   const [checked, setCenter] = useRecoilState(checkedState);
   const classToggle = () => {

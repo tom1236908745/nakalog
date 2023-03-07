@@ -1,7 +1,7 @@
 'use client';
 // import { useState } from 'react';
 import React, { useRef, useState, useEffect } from 'react';
-import popup from '../../styles/popup.module.css';
+import popup from '@/styles/popup.module.css';
 import Image from 'next/image';
 export default function Popup() {
   const [num, setNum] = useState<number | undefined>(0);

@@ -3,6 +3,7 @@
 @tailwind utilities;
 :root {
   --font-size-m: 1.125rem;
+  -color-surface: rgba(8, 19, 26, 0.03137254901960784);
 }
 * {
   font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;

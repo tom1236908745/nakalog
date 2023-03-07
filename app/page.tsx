@@ -8,8 +8,8 @@ import { useRecoilState } from 'recoil';
 import { loadingState } from 'atoms/LoadingAtom';
 import homeStyle from '../styles/home.module.css';
 
-import Popup from '../components/Elements/Popup';
-import Topic from '../components/Elements/Topic';
+import Popup from '../components/Elements/Home/Popup';
+import Topic from '../components/Elements/Home/Topic';
 
 export default function Page() {
   // ページ外からの遷移か、内からか

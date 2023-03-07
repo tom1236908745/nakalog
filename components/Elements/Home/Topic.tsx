@@ -1,6 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
-import topic from '../../styles/elements/topic.module.css';
+import topic from '@/styles/elements/topic.module.css';
 
 export default function Topic() {
   return (

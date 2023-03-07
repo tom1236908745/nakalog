@@ -35,8 +35,9 @@ export default async function TravelDetailPage({
         <p style={{ fontSize: '1rem', color: '#707070' }}>
           {adjustData(post.publishedAt)}
         </p>
-        {/* <div className={articleStyle.bodyWrapper}>{parse(post.body)}</div> */}
+        {/* <div >{parse(post.body)}</div> */}
         <div
+          className={articleStyle.bodyWrapper}
           dangerouslySetInnerHTML={{
             __html: `${post.body}`,
           }}
