@@ -1,6 +1,6 @@
 import React from 'react';
 import { GetBlogs } from 'components/Elements/Blogs/Travel/GetBlog';
-import PlaneLogo from '../../components/Elements/SVG/Travel/PlaneLogo';
+import { PlaneLogo } from '../../components/Elements/SVG/Travel/PlaneLogo';
 import { Suspense } from 'react';
 const Travel = async (): Promise<JSX.Element> => {
   return (

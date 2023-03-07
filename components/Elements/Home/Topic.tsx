@@ -1,7 +1,7 @@
 'use client';
 import topic from '@/styles/elements/topic.module.css';
 
-export default function Topic() {
+export const Topic = () => {
   return (
     <div className={topic.wrapper}>
       <div className={topic.leftParts}>
@@ -23,4 +23,4 @@ export default function Topic() {
       </div>
     </div>
   );
-}
+};

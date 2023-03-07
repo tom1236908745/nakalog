@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import ReactFreezeframe from 'react-freezeframe';
-const PlaneLogo: React.FC = () => {
+export const PlaneLogo = () => {
   return (
     <div>
       {/* <ReactFreezeframe src="./images/travel/plane.gif"></ReactFreezeframe> */}
@@ -9,4 +9,3 @@ const PlaneLogo: React.FC = () => {
     </div>
   );
 };
-export default PlaneLogo;

@@ -1,9 +1,8 @@
 'use client';
-// import { useState } from 'react';
+
 import React, { useRef, useState, useEffect } from 'react';
 import popup from '@/styles/popup.module.css';
-import Image from 'next/image';
-export default function Popup() {
+export const Popup = () => {
   const [num, setNum] = useState<number | undefined>(0);
 
   const toggleVisibility = () => {
@@ -30,4 +29,4 @@ export default function Popup() {
       />
     </div>
   );
-}
+};
