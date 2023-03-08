@@ -12,19 +12,13 @@ import { Popup } from '../components/Elements/Home/Popup';
 import { Topic } from '../components/Elements/Home/Topic';
 
 export default function Page() {
-  // ページ外からの遷移か、内からか
-  const [containPath, setContainPath] = useState<boolean>(false);
   const [isLoad, setIsLoad] = useRecoilState(loadingState);
 
   useLayoutEffect(() => {
     let timer: any;
-
-    setContainPath(true);
     timer = setTimeout(() => {
       setIsLoad(true);
     }, 2300);
-    console.log(document.referrer);
-    console.log('true');
 
     return () => {
       clearTimeout(timer);
@@ -32,7 +26,7 @@ export default function Page() {
   }, []);
   return (
     <div>
-      {containPath && isLoad ? (
+      {isLoad ? (
         <div>
           <Topic />
           <Popup />
