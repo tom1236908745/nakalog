@@ -48,7 +48,7 @@ export const getList = async (
   });
 
   // データの取得が目視しやすいよう明示的に遅延効果を追加
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return listData;
 };
@@ -66,7 +66,7 @@ export const getDetail = async (
   });
 
   // データの取得が目視しやすいよう明示的に遅延効果を追加
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
 
   return detailData;
 };
