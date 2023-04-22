@@ -26,7 +26,7 @@ export default function Page() {
   }, []);
   return (
     <div>
-      {isLoad ? (
+      {/* {isLoad ? (
         <div>
           <Topic />
           <Popup />
@@ -43,7 +43,14 @@ export default function Page() {
             muted
           ></video>
         </>
-      )}
+      )} */}
+      <div>
+        <Topic />
+        <Popup />
+        <div className={homeStyle.maxHeight}>
+          かっこいいと美を追求するプログラマーの世界観へとご案内。その世界をより深く知るための好きな音楽・映画・本も、各分野のこだわりをセレクトしました。ようこそ、個性の詰まった異世界へ。
+        </div>
+      </div>
     </div>
   );
 }

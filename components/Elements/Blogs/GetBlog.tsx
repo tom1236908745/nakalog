@@ -1,11 +1,14 @@
-import React, { ReactElement } from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import { getList } from 'features/libs/microcms';
 import articleListStyle from '@/styles/article/articleListStyle.module.css';
 import type { MicroCMSImage } from 'microcms-js-sdk';
 import { adjustDate } from '@/features/utils/adjustDate';
-export const GetBlogs = (async () => {
-  const { contents } = await getList();
+export type GetBlogPropsType = {
+  endPoint: string;
+};
+export const GetBlogs: FC<GetBlogPropsType> = (async (props: any) => {
+  const { contents } = await getList(props.endPoint);
   const handleUrl = (url: MicroCMSImage | undefined) => {
     if (url) return url.url;
     return '';
@@ -16,7 +19,7 @@ export const GetBlogs = (async () => {
         return (
           <div key={post.id}>
             <Link
-              href={`/travel/${post.id}`}
+              href={`/${props.endPoint}/${post.id}`}
               className={articleListStyle.contentStyle}
             >
               <img

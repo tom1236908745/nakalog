@@ -22,33 +22,21 @@ const Header = () => {
             <div className="downMenu">
               <ul className="topLinks">
                 <li className="topLink">
-                  <a href="" className="linkTopMenus">
+                  <Link href="/techs" className="linkTopMenus">
+                    <span className="enStrTopMenu">TECH</span>
+                    <span className="jsStrTopMenu"> テクノロジー </span>
+                  </Link>
+                </li>
+                <li className="topLink">
+                  <Link href="/eats" className="linkTopMenus">
                     <span className="enStrTopMenu">EAT</span>
-                    <span className="jsStrTopMenu"> 食べる </span>
-                  </a>
+                    <span className="jsStrTopMenu"> グルメ </span>
+                  </Link>
                 </li>
                 <li className="topLink">
-                  <a href="" className="linkTopMenus">
-                    <span className="enStrTopMenu">DRINK</span>
-                    <span className="jsStrTopMenu"> 飲む </span>
-                  </a>
-                </li>
-                <li className="topLink">
-                  <a href="" className="linkTopMenus">
-                    <span className="enStrTopMenu">WATCH</span>
-                    <span className="jsStrTopMenu"> 見る </span>
-                  </a>
-                </li>
-                <li className="topLink">
-                  <a href="" className="linkTopMenus">
-                    <span className="enStrTopMenu">LISTEN</span>
-                    <span className="jsStrTopMenu"> 聴く </span>
-                  </a>
-                </li>
-                <li className="topLink">
-                  <Link href="/travel" className="linkTopMenus">
-                    <span className="enStrTopMenu">VISIT</span>
-                    <span className="jsStrTopMenu"> 訪れる </span>
+                  <Link href="/travels" className="linkTopMenus">
+                    <span className="enStrTopMenu">Travels</span>
+                    <span className="jsStrTopMenu"> トラベル </span>
                   </Link>
                 </li>
               </ul>

@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import parse from 'html-react-parser';
 import { getDetail, getList } from '../../../features/libs/microcms';
 import articleStyle from '@/styles/article/articleStyle.module.css';
 import { adjustDate } from '@/features/utils/adjustDate';
@@ -9,7 +8,7 @@ export default async function TravelDetailPage({
 }: {
   params: { postId: string };
 }) {
-  const post = await getDetail(postId);
+  const post = await getDetail('eats', postId);
 
   if (!post) {
     notFound();

@@ -38,9 +38,12 @@ export const client = createClient({
   apiKey: process.env.MICROCMS_API_KEY,
 });
 // ブログ一覧を取得
-export const getList = async (queries?: MicroCMSQueries) => {
+export const getList = async (
+  endPointName: string,
+  queries?: MicroCMSQueries,
+) => {
   const listData = await client.get<BlogResponse>({
-    endpoint: 'blogs',
+    endpoint: endPointName,
     queries,
   });
 
@@ -52,11 +55,12 @@ export const getList = async (queries?: MicroCMSQueries) => {
 
 // ブログの詳細を取得
 export const getDetail = async (
+  endPointName: string,
   contentId: string,
   queries?: MicroCMSQueries,
 ) => {
   const detailData = await client.get<Blog>({
-    endpoint: 'blogs',
+    endpoint: endPointName,
     contentId,
     queries,
   });
