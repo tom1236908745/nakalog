@@ -17,7 +17,7 @@ export default async function TravelDetailPage({
     <div style={{ marginTop: '13rem' }}>
       <div className={articleStyle.googleMapStyle}>
         <p>here!</p>
-        // TODO: 復活させる
+        // TODO: 復活させる(構成変更に伴い、パスを変更する必要がある)
         {/* <iframe
           width="300"
           height="200"
